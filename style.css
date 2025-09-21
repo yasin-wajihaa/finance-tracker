@@ -107,3 +107,26 @@ body {
     background: #fde8e8;
     color: #d62626;
 }
+
+.drawer {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 350px;
+    height: 100%;
+    background: #fff;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+    transition: right 0.3s ease;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.drawer.open {
+    right: 0;
+}
+
+#transaction-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
