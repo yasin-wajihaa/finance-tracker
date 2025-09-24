@@ -111,8 +111,8 @@ body {
 .drawer {
     position: fixed;
     top: 0;
-    right: -400px;
-    width: 350px;
+    right: -450px;
+    width: 400px;
     height: 100%;
     background: #fff;
     box-shadow: -2px 0 10px rgba(0,0,0,0.2);
@@ -130,3 +130,51 @@ body {
     flex-direction: column;
     gap: 10px;
 }
+
+.last-btn {
+    display: flex;
+    width: 100%;
+    gap: 10px;  
+}
+
+.last-btn button {
+    flex: 1 1 0;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#cancel-btn {
+    background: none;
+    border-color: grey;
+    border-width: 1px;
+}
+
+#cancel-btn:hover{
+    background-color: rgb(223, 220, 220);
+}
+
+#submit-btn {
+    background: linear-gradient(90deg, #3bbbf6, #4b1b72);
+    color: white;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: 0.2s;
+    border: none;
+
+}
+
+#submit-btn:hover {
+    opacity: 0.9;
+}
+
+#submit-btn span svg.lucide {
+  width: 16px !important;      /* smaller width */
+  height: 16px !important;     /* smaller height */
+  vertical-align: middle !important; /* align nicely with text */
+       
+}
+
+
+
+
